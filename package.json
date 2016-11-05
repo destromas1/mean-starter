@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/destromas1/mean-starter/issues"
   },
-  "homepage": "https://github.com/destromas1/mean-starter#readme"
+  "homepage": "https://github.com/destromas1/mean-starter#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
