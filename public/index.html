@@ -4,13 +4,30 @@
     <base href="/">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="styles/style.css" rel="stylesheet" />
 </head>
 <body>
-    <div>
-        <div ng-view></div>
+
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">MEAN App</h3>
+              <nav class="nav nav-masthead">
+                <a class="nav-link active" href="/login">Login</a>
+                <a class="nav-link" href="/signup">Signup</a>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <div ng-view></div>            
+          </div>
+
+        </div>
+      </div>
     </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
