@@ -14,15 +14,15 @@
         <div class="cover-container">
           <div class="masthead clearfix">
             <div class="inner">
-              <h3 class="masthead-brand">MEAN App</h3>
+              <h3 class="masthead-brand"><a class="nav-link" href="/">MEAN App</a></h3>
               <nav class="nav nav-masthead">
-                <a class="nav-link active" href="/login">Login</a>
+                <a class="nav-link" href="/login">Login</a>
                 <a class="nav-link" href="/signup">Signup</a>
               </nav>
             </div>
           </div>
 
-          <div class="inner cover">
+          <div class="inner cover" style="margin-top: -333px;">
             <div ng-view></div>            
           </div>
 
@@ -37,6 +37,8 @@
 
     <script src="app/app.js"></script>
     <script src="app/controllers/home-controller.js"></script>
+    <script src="app/controllers/signup-controller.js"></script>
+    <script src="app/controllers/login-controller.js"></script>
 
 </body>
 </html>

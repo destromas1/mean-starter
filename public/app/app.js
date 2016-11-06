@@ -9,6 +9,14 @@ app.config(function ($routeProvider, $locationProvider) {
         templateUrl: "/views/home.html",
         controller: 'homeCtrl'
         }).
+        when("/signup", {
+        templateUrl: "/views/signup.html",
+        controller: 'signupCtrl'
+        }).
+        when("/login", {
+        templateUrl: "/views/login.html",
+        controller: 'loginCtrl'
+        }).
         otherwise({ redirectTo: '/' });
 
     $locationProvider.html5Mode(true);
