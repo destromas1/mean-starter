@@ -1,8 +1,8 @@
-var express = require('express');
-var router = express.Router();
+module.exports = function (app) {
 
-router.get('/api/ping', function(req, res, next) {
-  res.send({success : true , msg : "pong"});
-});
+  app.get('/api/ping', function (req, res, next) {
+    res.send("pong");
+  });
+  
 
-module.exports = router;
+};
